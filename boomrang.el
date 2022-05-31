@@ -1,3 +1,37 @@
+;; boolcase-mode.el
+
+;; Author: Jeremie Juste
+;; Created: 05-31-2022
+
+;; This file is part of GNU Emacs.
+
+;;; License:
+;;
+;; This program is free software; you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation, either version 3 of the License, or
+;; (at your option) any later version.
+;;
+;; This program is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+;;
+;; You should have received a copy of the GNU General Public License
+;; along with this program.  If not, see
+;; <http://www.gnu.org/licenses/>
+
+;;; Commentary:
+
+;; This program is a small utility function but has been of great
+;; value to me Sometime auto-completion is not fast or easy enough. If
+;; you want to just copy any work symbol or sentence on the screen
+;; without having to move your cursor this will do a pretty good job.
+;; This program heavily depends on avy, (building on the shoulders of
+;; giants :-)). I learnt since then that avy is much more profound
+;; than what meets the
+;; eye. https://karthinks.com/software/avy-can-do-anything/
+
 (defun djj/avy-goto-word-1 (char &optional arg beg end symbol)
   "Jump to the currently visible CHAR at a word start.
 The window scope is determined by `avy-all-windows'.
