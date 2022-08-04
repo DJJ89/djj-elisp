@@ -28,9 +28,8 @@
 ;; The minor mode for ESS can be added in the following way (add-hook 'ess-r-mode  'boolcase-mode)
 ;; It has been a great ressource to create a first minor mode.
 
-(defvar boolcase-mode-words
-  "Words to capitalize"
-  '("true" "false"))
+(defvar boolcase-mode-words '("true" "false")
+  "Words to capitalize")
 
 (defun boolcase-mode-check ()
   (if (= last-command-event) 101)

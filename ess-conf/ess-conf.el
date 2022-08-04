@@ -60,8 +60,8 @@
   (setq inferior-ess-replace-long+ 'strip)
   (setq inferior-ess-r-program "c:/Users/JeremieJuste/Documents/R/R-4.1.1/bin/x64/Rterm")
   (add-to-list 'exec-path "c:/Users/JeremieJuste/Documents/R/R-4.1.1/bin/")
-  ;; (setq inferior-ess-r-program "c:/Users/JeremieJuste/Documents/R/R-4.2.0/bin/x64/Rterm")
-  ;; (add-to-list 'exec-path "c:/Users/JeremieJuste/Documents/R/R-4.2.0/bin/")
+  (setq inferior-ess-r-program "c:/Users/JeremieJuste/Documents/R/R-4.2.1/bin/x64/Rterm")
+  (add-to-list 'exec-path "c:/Users/JeremieJuste/Documents/R/R-4.2.1/bin/")
 
   (add-hook 'ess-mode-hook (lambda ()
 			     (yas-activate-extra-mode 'inferior-ess-r-mode)))
